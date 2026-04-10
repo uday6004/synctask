@@ -1,0 +1,43 @@
+/* Responsive Design Module */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+/* Desktop Interaction Pattern */
+.content {
+  padding: 40px;
+  flex-grow: 1;
+}
+
+textarea {
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+  font-size: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+/* Mobile Hardware Optimization */
+@media (max-width: 600px) {
+  .content {
+    padding: 15px;
+  }
+  
+  textarea {
+    height: 80vh; /* Maximize space for mobile keyboards */
+    font-size: 1rem;
+    border: none; /* Frictionless edge-to-edge feel */
+  }
+
+  .navbar h1 {
+    font-size: 1.2rem;
+  }
+}
+
+.status.syncing { color: #f39c12; }
+.status { color: #2ecc71; font-weight: bold; }
